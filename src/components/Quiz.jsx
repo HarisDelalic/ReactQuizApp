@@ -32,7 +32,7 @@ export default function Quiz() {
     shuffledAnswers.sort(() => Math.random() - 0.5)
 
     return (<div id="quiz">
-        <QuestionTimer timeout={10000} onTimeout={handleSelectAnswer}></QuestionTimer>
+        <QuestionTimer key={activeQuestionIndex} timeout={5000} onTimeout={handleSelectAnswer}></QuestionTimer>
         <div id="question">
             <h2>{QUESTIONS[activeQuestionIndex].text}</h2>
 

@@ -21,7 +21,7 @@ export default function Quiz() {
         },
         []);
 
-    const handleSkipAnswer = useCallback(() => handleSelectAnswer(null), [handleSelectAnswer])
+    const handleSkipAnswer = useCallback(() => handleSelectAnswer(null), [])
 
     if (isQuizCompleted) {
         return <Summary userAnswers={userAnswers} />;

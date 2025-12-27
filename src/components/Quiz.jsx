@@ -7,7 +7,6 @@ import Question from "./Question.jsx";
 
 export default function Quiz() {
     const [userAnswers, setUserAnswers] = useState([])
-    const [answerState, setAnswerState] = useState('')
 
     const activeQuestionIndex = userAnswers.length
 
